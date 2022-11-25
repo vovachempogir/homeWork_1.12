@@ -1,7 +1,5 @@
 package lesson;
 
-import java.io.PrintStream;
-
 public class Main {
     public static void main(String[] args) {
         Author warTolstoy = new Author("Война и мир", "Толстой");
@@ -14,4 +12,5 @@ public class Main {
         System.out.println(daughterPushkin.getBookName() + " " + daughterPushkin.getAuthor() + " " + daughterPushkinYear.getPublisherYear());
 
     }
+
 }
