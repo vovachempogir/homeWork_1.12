@@ -2,14 +2,22 @@ package lesson;
 
 public class Main {
     public static void main(String[] args) {
-        Author warTolstoy = new Author("Война и мир", "Толстой");
-        Book warTolstoyYear = new Book(1863);
-        warTolstoyYear.setPublisherYear(2010);
-        System.out.println(warTolstoy.getBookName() + " " + warTolstoy.getAuthor() + " " + warTolstoyYear.getPublisherYear());
-        Author daughterPushkin = new Author("Капитанская дочь", "Пушкин");
-        Book daughterPushkinYear = new Book(1836);
-        daughterPushkinYear.setPublisherYear(2011);
-        System.out.println(daughterPushkin.getBookName() + " " + daughterPushkin.getAuthor() + " " + daughterPushkinYear.getPublisherYear());
+        Author warTolstoy = new Author("Лев", "Толстой");
+        Book warTolstoyBook = new Book("Война и мир" , warTolstoy,1863);
+
+        Author daughterPushkin = new Author("Александр", "Пушкин");
+        Book daughterPushkinBook = new Book("Капитанская дочка", daughterPushkin, 1836);
+
+        System.out.println(warTolstoyBook);
+        System.out.println(daughterPushkinBook);
+
+        warTolstoyBook.setPublisherYear(2022);
+        daughterPushkinBook.setPublisherYear(2022);
+
+        System.out.println(warTolstoyBook);
+        System.out.println(daughterPushkinBook);
+        System.out.println(warTolstoyBook.equals(daughterPushkinBook));
+        System.out.println(warTolstoy.equals(daughterPushkin));
 
     }
 
