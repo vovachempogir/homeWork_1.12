@@ -1,5 +1,4 @@
 package lesson;
-
 import java.util.Objects;
 public class Author {
     private final String firstName;

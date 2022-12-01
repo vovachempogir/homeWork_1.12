@@ -18,7 +18,6 @@ public class Main {
         System.out.println(daughterPushkinBook);
         System.out.println(warTolstoyBook.equals(daughterPushkinBook));
         System.out.println(warTolstoy.equals(daughterPushkin));
-
     }
 
 }
